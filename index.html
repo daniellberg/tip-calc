@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <div class="inputs">
+            <div class="upper">
+                <label for="billAmount">Bill Amount:</label>
+                <input type="number"  id="billAmount" placeholder="$ 00.00" required>
+            </div>
+            <div class="bottom">
+                <label for="tip">Tip Percentage:</label>
+                <select id="tip">
+                    <option value="0.1">10%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.2">20%</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button type="button" id="calculate">Calculate tip</button>
+            </div>
+
+            <div class="total">
+                <span class="valorFinal"> Total Amount: $</span><span id="totalAmount">00.00</span>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
